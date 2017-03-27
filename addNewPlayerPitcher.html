@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+ * Author: Lisa Wen, Brian D'Alesandro, Isma Terrence
+ * Created: March 3, 2017
+ * Last Modified: March 21, 2017
+ * Version: 2.2
+-->
+<html>
+    <head>
+        <title>Baseball Player Stat Tracker</title>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="baseball, stats, management" />
+        <meta name="description" content="This is a website to view and manage baseball stats." />
+        <link rel="stylesheet" type="text/css" href="css/main.css" media="all" />
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="js/onLoadDropDowns.js"></script>
+        <script type="text/javascript" src="js/addPlayerPitcher.js"></script>
+        <script type="text/javascript" src="js/loginCheck.js"></script>
+    </head>
+    <body onload="isLoggedIn(); getTeams('#selectTeam'); getPosition();">
+        <!-- beginning of wrapper -->
+        <div id="wrapper" style="display: none;">
+            
+        <!-- beginning of navigation bar -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="addNewTeam.html">Add a New Team</a></li>
+                <li><a href="addNewPlayerPitcher.html">Add a New Player/Pitcher</a></li>
+                <li><a href="addNewRecord.html">Add a New Record for an Existing Player/Pitcher</a></li>
+                <li><a href="updatePlayerPitcher.html">Update an Existing Player/Pitcher</a><li>
+                <li><a href="php/logout.php">Logout</a><li>
+            </ul>
+        </nav>
+        <!-- End of navigation bar -->
+        
+        <!-- Beginning of content -->
+            
+        <div id="content">
+            <h1>Add New Player or Pitcher</h1>
+        <table>
+            <tr>
+                <th>Team Name</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Position</th>
+                <th>Add New Player</th>
+            </tr>
+            <tr>
+                <td>
+                    <select id="selectTeam"></select>
+                </td>
+                <td>
+                    <input type="text" id="fname" />
+                </td>
+                <td>
+                    <input type="text" id="lname" />
+                </td>
+                <td>
+                    <select id="selectPosition"></select>
+                </td>
+                <td>
+                    <button id="btnPlayerAdd">Add Player</button>
+                </td>
+            </tr>
+        </table>
+           <h2>Status: <span id="status"></span></h2>
+        </div>
+        <!-- End of content -->
+        
+        <!--beginning of footer that contains the validator for HTML and CSS-->
+        <footer>
+            <a href="http://validator.w3.org/check?uri=referer"
+               onclick="this.href='http://validator.w3.org/check?uri=' + document.URL">
+            <img src="http://www.w3.org/Icons/valid-xhtml10"
+            alt="Valid XHTML 1.0 Transitional" height="31" width="88" />
+            </a>
+
+            <a href="http://jigsaw.w3.org/css-validator/check/referer"
+               onclick="this.href='http://jigsaw.w3.org/css-validator/validator?uri=' + document.URL">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Valid CSS!" />
+            </a>
+        </footer>
+        <!-- End of footer -->
+        
+        </div>
+        <!-- End of wrapper -->
+    </body>
+</html>
+

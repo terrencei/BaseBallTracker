@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+ * Author: Lisa Wen, Brian D'Alesandro, Isma Terrence
+ * Created: March 3, 2017
+ * Last Modified: March 19, 2017
+ * Version: 1.3
+-->
+<html>
+    <head>
+        <title>Baseball Player Stat Tracker</title>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="baseball, stats, management" />
+        <meta name="description" content="This is a website to view and manage baseball stats." />
+        <link rel="stylesheet" type="text/css" href="css/main.css" media="all" />
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="js/onLoadDropDowns.js"></script>
+        <script type="text/javascript" src="js/loadIndividualData.js"></script>
+        <script type="text/javascript" src="js/onLoadData.js"></script>
+    </head>
+    <body onload="getTeams('#selectTeam'); getPlayers(1); showPlayerRows(2);">
+        <!-- beginning of wrapper -->
+        <div id="wrapper">
+            
+        <!-- beginning of navigation bar -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="teamLeaderboard.html">Team Leaderboard</a></li>
+                <li><a href="playerLeaderboard.html">Player Leaderboard</a></li>
+                <li><a href="playerData.html">Player Data</a></li>
+                <li><a href="pitcherLeaderboard.html">Pitcher Leaderboard</a></li>
+                <li><a href="pitcherData.html">Pitcher Data</a></li>
+                <li><a href="login.html">Administrator View</a></li>
+            </ul>
+        </nav>
+        <!-- End of navigation bar -->
+        
+        <!-- Beginning of content -->
+            
+        <div id="content">
+            <h1>Individual Player Data</h1>
+            <select id="selectTeam"></select>
+            <select id="selectPlayer"></select>
+            <button type="button" id="choosePlayerToDisplay">Show</button>
+            <br />
+            <br />
+            <table id="playerDataTable">
+                <tr>
+                    <th>Player Name</th>
+                    <th>At Bats</th>
+                    <th>Hits</th>
+                    <th>Home Runs</th>
+                    <th>Runs Batted In</th>
+                    <th>Walks</th>
+                    <th>Stolen Bases</th>
+                </tr>
+            </table>
+            <p id="noData"></p>
+        </div>
+        <!-- End of content -->
+        
+        <!--beginning of footer that contains the validator for HTML and CSS-->
+        <footer>
+            <a href="http://validator.w3.org/check?uri=referer"
+               onclick="this.href='http://validator.w3.org/check?uri=' + document.URL">
+            <img src="http://www.w3.org/Icons/valid-xhtml10"
+            alt="Valid XHTML 1.0 Transitional" height="31" width="88" />
+            </a>
+
+            <a href="http://jigsaw.w3.org/css-validator/check/referer"
+               onclick="this.href='http://jigsaw.w3.org/css-validator/validator?uri=' + document.URL">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Valid CSS!" />
+            </a>
+        </footer>
+        <!-- End of footer -->
+        
+        </div>
+        <!-- End of wrapper -->
+    </body>
+</html>
+
