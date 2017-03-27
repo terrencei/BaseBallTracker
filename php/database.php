@@ -8,9 +8,9 @@
  */
 
 //LW: connect to the database
-$dsn = "mysql:host=twilbury.cs.drexel.edu;dbname=lw493_info556_201602";
-$username = "lw493";
-$password = "quikxmjps";
+$dsn = "mysql:host=us-cdbr-iron-east-03.cleardb.net;dbname=heroku_5d00858bf0bb0aa";
+$username = "b070b3dbbb2e5c";
+$password = "c02e8520";
 $db = new PDO($dsn, $username, $password);
 
 ?>
