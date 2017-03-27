@@ -1,0 +1,134 @@
+/**
+ * Author: Brian D'Alesandro, Isma Terrence, Lisa Wen
+ * Created: March 3, 2017
+ * Last Modified: March 20, 2017
+ * Version: 2.1
+ */
+
+a:link{
+    color: #3a9250;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #80cb93;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #3a9250;
+    text-decoration: none;
+}
+
+body{
+    background-color: #EAEDED;
+    font-family: sans-serif, helvetica, arial;
+    background: url("img/baseball-wallpaper-1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+nav{
+    float: left;
+    background-color: #FFFFFF;
+    margin-left: 50px;
+    width: 200px;
+    font-variant: small-caps;
+    border: 2px solid #ad1f1f;
+}
+
+nav a:link, nav a:visited{
+    color: #333333;
+    text-decoration: none;
+}
+
+nav a:hover, nav a:active{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a{
+    display: block;
+    padding: 5%;
+}
+
+nav a:hover{
+    background-color: #ad1f1f;
+}
+
+div#content{
+    background-color: #FFFFFF;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 25px 10px 25px;
+    width: 750px;
+    border: 2px solid #ad1f1f;
+}
+
+h1{
+    color: #ad1f1f;
+    font-weight: bold;
+    font-size: 24pt;
+    font-variant: small-caps;
+}
+
+p{
+    color: #4C4C4B;
+    font-weight: normal;
+    font-size: 12pt;
+    line-height: 25px;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: left;
+    width: 100%
+}
+
+table th{
+    background-color: #ad1f1f;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+table tr, td{
+    border: 1px solid #ad1f1f;
+    color: #000000;
+    padding: 5px;
+    text-align: center;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+table tr:nth-child(odd) {
+    background-color: #FFFFFF
+}
+
+footer{
+    background-color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    text-align: center;
+    border: 2px solid #ad1f1f;
+    
+}
+
+img{
+    padding: 10px;
+}
